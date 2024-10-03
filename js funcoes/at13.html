@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function embaralharPalavra( palavra){
+                return  palavra.toString().split('').sort(() => Math.random() - 0.5).join('');
+            }
+            let resul = embaralharPalavra(palavra);
+            alert("A palavra embaralhada é: " + resul);
+
+
+    </script>
+</body>
+</html>

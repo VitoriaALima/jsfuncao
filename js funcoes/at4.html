@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let nota1 = parseFloat(prompt('Coloque a 1º nota:'))
+        let nota2 = parseFloat(prompt('Coloque a 2º nota:'))
+        let nota3 = parseFloat(prompt('Coloque a 3º nota:'))
+        let ariouPo = prompt('A ou P? ')
+
+        function mediaAri(num1, num2, num3) {
+            var mediaAri = (num1 + num2 + num3)/ 3
+            return mediaAri
+        }
+        function mediaPo(num1, num2, num3) {
+            var mediaPo = (num1*5 + num2*3 + num3*2)/ 10
+            return mediaPo
+        }
+        if(ariouPo == 'A'){
+            alert(mediaAri(nota1, nota2, nota3))
+        }
+        else if(ariouPo == 'P'){
+            alert(mediaPo(nota1, nota2, nota3))
+        }
+        else{
+            alert('Valor inválido')
+        }
+
+    </script>
+
+</body>
+</html>

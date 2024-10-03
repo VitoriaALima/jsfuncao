@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function formarNumero(n1, n2) {
+
+            let primeiroDigitoN1 = Math.floor(n1 / 10);
+            let ultimoDigitoN2 = n2 % 10;
+            let n3 = (primeiroDigitoN1 * 10) + ultimoDigitoN2;
+            return n3;
+        }
+        var resultado = formarNumero(60,24)
+        alert(resultado)
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function reverter(num1){   
+            var string = String(num1)
+            var separar = string.split('')
+            var inverter = separar.reverse()
+            var nfinal = ''
+            for (i in inverter){
+                nfinal = nfinal + inverter[i]
+            }
+            return nfinal
+        }   
+        var num1 = prompt('Digite um número: ')
+        alert(reverter(num1))
+
+    </script>
+
+</body>
+</html>

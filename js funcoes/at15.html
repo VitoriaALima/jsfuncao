@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function pitagoras(cateto1, cateto2) {
+                let calculo = (cateto1 ** 2) + (cateto2 ** 2)
+                if (calculo < 0) {
+                    return "Valores inválidos"
+                }
+
+                calculo = calculo ** 0.5
+                return calculo
+
+                }
+                
+                var cateto1 = parseFloat(prompt("Insira o coeficiente a "))
+                var cateto2 = parseFloat(prompt("Insira o coeficiente b "))
+                var resultadoo = pitagoras(cateto1, cateto2) 
+            
+                alert(resultadoo) 
+
+    </script>
+
+</body>
+</html>
